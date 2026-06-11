@@ -249,4 +249,68 @@ footer {
   .hero-logo {
     width: 180px;
   }
+
+  .team-card {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.team-photo {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.team-content {
+    padding: 40px;
+    text-align: left;
+}
+
+.team-content h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.team-content h4 {
+    color: #c9a227;
+    margin-bottom: 20px;
+}
+
+.team-content p {
+    margin-bottom: 15px;
+}
+
+.team-content blockquote {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    border-left: 4px solid #c9a227;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        flex-direction: column;
+    }
+
+    .team-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-content {
+        text-align: center;
+    }
+
+    .team-content blockquote {
+        text-align: left;
+    }
+}
 }
