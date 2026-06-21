@@ -5,28 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BJJ Ultimate Call Out | Non-Profit</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .team-note {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .team-photo {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background: #e9e9e9;
+    }
+
+    .team-content {
+      padding: 1.5rem;
+    }
+
+    .team-content h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    .team-content h4 {
+      margin-top: 0;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .team-content blockquote {
+      margin: 1rem 0 0;
+      padding-left: 1rem;
+      border-left: 4px solid #111;
+      font-weight: 600;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <nav class="navbar">
       <div class="brand">
-        <img src="logo.jpg" alt="BJJ Ultimate Call Out Logo" />
+        <img src="1933.jpg" alt="BJJ Ultimate Call Out Logo" />
         <span>BJJ Ultimate Call Out</span>
       </div>
 
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#donate" class="donate-btn">Donate</a></li>
+        <li><a href="#team">Team</a></li>
+        <!--<li><a href="#events">Events</a></li>-->
+        <!--<li><a href="#donate" class="donate-btn">Donate</a></li>-->
       </ul>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <img src="logo.jpg" alt="BJJ Ultimate Call Out Logo" class="hero-logo" />
+      <img src="1933.jpg" alt="BJJ Ultimate Call Out Logo" class="hero-logo" />
       <h1>Changing Lives One Roll at a Time</h1>
       <p>
         BJJ Ultimate Call Out is a non-profit dedicated to empowering youth,
@@ -53,87 +107,105 @@
   <section id="programs" class="section light">
     <h2>Our Programs</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Youth Scholarships</h3>
-        <p>Helping students gain access to BJJ classes, uniforms, and training.</p>
-      </div>
-
-      <div class="card">
-        <h3>Competition Support</h3>
-        <p>Assisting athletes with tournament fees, travel, and preparation.</p>
-      </div>
-
-      <div class="card">
-        <h3>Community Outreach</h3>
-        <p>Hosting seminars, open mats, and self-defense events for the community.</p>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="team" class="section">
     <h2>Meet the Team</h2>
 
-    <div class="team-card">
-        <img src="john-herrera.jpg" alt="John Herrera" class="team-photo">
+    <p class="team-note">
+      To use photos stored in GitHub, replace each image URL below with your GitHub raw image link.
+      Example: https://raw.githubusercontent.com/your-username/your-repo/main/images/member-photo.jpg
+    </p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <!-- Replace this with the GitHub raw URL for John's photo -->
+        <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/john-herrera.jpg" alt="John Herrera" class="team-photo" />
 
         <div class="team-content">
-            <h3>John Herrera</h3>
-            <h4>President & Founder</h4>
+          <h3>John Herrera</h3>
+          <h4>President & Founder</h4>
 
-            <p>
-                My name is John Herrera, and I am the President of BJJ Ultimate Call Out.
-                I am a Purple Belt with Dark Haven Studio.
-            </p>
+          <p>
+            My name is John Herrera, and I am the President of BJJ Ultimate Call Out.
+            I am a Purple Belt with Dark Haven Studio.
+          </p>
 
-            <p>
-                The idea for this organization came to me after I needed surgery from an
-                injury sustained while training Brazilian Jiu-Jitsu. While I was fortunate
-                enough to receive the care I needed, I realized that many members of our
-                community are not as fortunate. Medical debt and financial hardships can
-                prevent people from continuing their BJJ journey.
-            </p>
+          <p>
+            The idea for this organization came to me after I needed surgery from an
+            injury sustained while training Brazilian Jiu-Jitsu. While I was fortunate
+            enough to receive the care I needed, I realized that many members of our
+            community are not as fortunate. Medical debt and financial hardships can
+            prevent people from continuing their BJJ journey.
+          </p>
 
-            <p>
-                I wanted to create a nonprofit organization dedicated to helping members of
-                the BJJ community stay on the mats through assistance programs and community
-                support.
-            </p>
+          <p>
+            I wanted to create a nonprofit organization dedicated to helping members of
+            the BJJ community stay on the mats through assistance programs and community
+            support.
+          </p>
 
-            <p>
-                Our goal is to give back through gear assistance, medical relief, support
-                for new academies, scholarships, and other opportunities that strengthen
-                our community.
-            </p>
+          <p>
+            Our goal is to give back through gear assistance, medical relief, support
+            for new academies, scholarships, and other opportunities that strengthen
+            our community.
+          </p>
 
-            <blockquote>
-                "The mat is your canvas. Your body is your chess board."
-            </blockquote>
+          <blockquote>
+            "The mat is your canvas. Your body is your chess board."
+          </blockquote>
         </div>
-    </div>
-</section>
-
-  <section class="impact">
-    <h2>Our Impact</h2>
-
-    <div class="impact-grid">
-      <div>
-        <h3>250+</h3>
-        <p>Students Reached</p>
       </div>
 
-      <div>
-        <h3>40+</h3>
-        <p>Scholarships Awarded</p>
+      <div class="team-card">
+        <!-- Replace with this member's GitHub raw photo URL -->
+        <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/team-member-2.jpg" alt="Team Member Name" class="team-photo" />
+
+        <div class="team-content">
+          <h3>Team Member Name</h3>
+          <h4>Vice President</h4>
+
+          <p>
+            Add this member's short bio here. Include their belt rank, academy,
+            connection to Brazilian Jiu-Jitsu, and how they support the mission of
+            BJJ Ultimate Call Out.
+          </p>
+        </div>
       </div>
 
-      <div>
-        <h3>100+</h3>
-        <p>Volunteer Hours</p>
+      <div class="team-card">
+        <!-- Replace with this member's GitHub raw photo URL -->
+        <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/team-member-3.jpg" alt="Team Member Name" class="team-photo" />
+
+        <div class="team-content">
+          <h3>Team Member Name</h3>
+          <h4>Secretary</h4>
+
+          <p>
+            Add this member's short bio here. Mention their role, background,
+            and how they help organize programs, outreach, events, or community support.
+          </p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <!-- Replace with this member's GitHub raw photo URL -->
+        <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/team-member-4.jpg" alt="Team Member Name" class="team-photo" />
+
+        <div class="team-content">
+          <h3>Team Member Name</h3>
+          <h4>Treasurer</h4>
+
+          <p>
+            Add this member's short bio here. Include their commitment to supporting
+            athletes, families, and academies through responsible funding and community care.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
+<!--
   <section id="events" class="section light">
     <h2>Upcoming Events</h2>
 
@@ -144,8 +216,9 @@
       <p>Free training, community support, and information about our programs.</p>
     </div>
   </section>
-
-  <section id="donate" class="donate-section">
+-->
+    
+  <!-- <section id="donate" class="donate-section">
     <h2>Support the Mission</h2>
     <p>
       Your donation helps provide uniforms, tournament fees, training support,
@@ -158,7 +231,7 @@
       <button>$100</button>
       <button>Custom Amount</button>
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <p>© 2026 BJJ Ultimate Call Out. All Rights Reserved.</p>
