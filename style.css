@@ -248,6 +248,7 @@ header {
   border-radius: 8px;
   border: 1px solid #333;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .event-photos img:hover {
@@ -342,6 +343,45 @@ header {
 
 .social-links a:hover {
   color: #ffffff;
+}
+
+/* Modal Pop-up Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: 10vh auto;
+  display: block;
+  max-width: 85%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #bbb;
+  text-decoration: none;
 }
 
 /* Responsive Media Query */

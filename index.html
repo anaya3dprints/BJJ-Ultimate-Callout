@@ -96,8 +96,8 @@
       respect, problem-solving, discipline, and resilience. Our goal is to make
       training and competition more accessible to those who need support.
     </p>
-    <blockquote>
-            "The mat is your canvas. Your body is your chess board."
+    <blockquote><strong>
+            "The mat is your canvas. Your body is your chess board."</strong>
     </blockquote>
   </section>
 
@@ -214,9 +214,9 @@
                       
                       <!-- Photo Gallery Grid for Food Drive -->
                       <div class="event-photos">
-                          <img src="bjj callout fundraiser.jpg" alt="Rio Grande Food Project Letter">
-                          <img src="bjj callout fundraiser2.jpg" alt="Loading donations into truck">
-                          <img src="bjj callout fundraiser3.jpg" alt="Donation boxes filled with food">
+                          <img src="bjj callout fundraiser.png" alt="Rio Grande Food Project Letter">
+                          <img src="bjj callout fundraiser2.png" alt="Loading donations into truck">
+                          <img src="bjj callout fundraiser3.png" alt="Donation boxes filled with food">
                       </div>
                   </div>
               </div>
@@ -230,19 +230,18 @@
           <h2 class="section-title">Future Announcements & Ways to Engage</h2>
           <div class="announcements-grid">
               <div class="announcement-card">
-                  <h3>Next Initiative</h3>
-                  <p class="announcement-date">Coming Soon — Fall 2026</p>
+                <img src="comingsoon.png" alt="Coming Soon" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;" />
                   <p>Stay tuned for our upcoming community outreach events, youth mentorship programs, and local roll-out schedules.</p>
               </div>
               
-              <div class="announcement-card">
+             <!-- <div class="announcement-card">
                   <h3>Support Our Cause</h3>
                   <p>Your contribution creates a lasting impact on youth and families in our community.</p>
                   <div class="cta-buttons">
                       <a href="#donate" class="btn primary-btn">Donate</a>
                       <a href="#volunteer" class="btn secondary-btn">Get Involved</a>
-                  </div>
-              </div>
+                  </div> 
+              </div> -->
           </div>
       </div>
   </section>
@@ -252,12 +251,45 @@
       <div class="container footer-content">
           <p>BJJ Ultimate Callout &copy; 2026. All rights reserved. A New Mexico Non-Profit.</p>
           <div class="social-links">
-              <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
-              <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
-              <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
+              <a href="https://www.instagram.com/bjj_ultimate_call_out/" target="_blank" aria-label="Instagram">Instagram</a>
+             <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> -->
+            <!-- <a href="https://tiktok.com" target="_blank" aria-label="TikTok">TikTok</a> -->
           </div>
       </div>
   </footer>
 
+  <!-- Image Modal Pop-up Container -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Enlarged view">
+  </div>
+
+  <!-- Modal Interactivity Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const closeBtn = document.querySelector(".close-modal");
+
+      if (!modal || !modalImg || !closeBtn) return;
+
+      document.querySelectorAll(".event-photos img").forEach(img => {
+        img.addEventListener("click", function() {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        });
+      });
+
+      closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+      });
+
+      modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
